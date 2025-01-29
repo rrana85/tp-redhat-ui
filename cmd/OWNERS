@@ -1,0 +1,8 @@
+reviewers:
+  - TheRealJon
+  - jhadvig
+approvers:
+  - TheRealJon
+  - jhadvig
+labels:
+  - component/backend
