@@ -45,37 +45,17 @@
   },
   "consolePlugin": {
     "name": "console-demo-plugin",
-    "version": "0.0.0",
-    "displayName": "Console NetApp Trident Protect Plugin",
-    "description": "Plasma reactors online. Initiating hyper drive.",
+    "version": "0.0.1",
+    "displayName": "Trident Protect",
+    "description": "Trident Protect plugin for openshift",
     "exposedModules": {
-      "exampleNavs": "./utils/example-navs",
-      "barUtils": "./utils/bar",
-      "perspective": "./utils/perspective",
-      "telemetry": "./utils/telemetry",
-      "extensionConsumer": "./components/ExtensionConsumer",
-      "utilityConsumer": "./components/UtilityConsumer",
-      "exampleProxyPage": "./components/ExampleProxyPage",
-      "K8sAPIConsumer": "./components/k8sConsumer/K8sAPIConsumer",
-      "exampleNamespacedPage": "./components/ExampleNamespacedPage",
-      "navPage": "./components/Nav",
-      "listPage": "./components/ListPage",
-      "projectTabContent": "./components/ProjectTabExtensionContent",
-      "clusterInventoryOverview": "./components/ClusterOverview/Inventory",
-      "clusterOverview": "./utils/cluster-overview",
-      "yamlEditor": "./components/YAMLEditorPage",
-      "events": "./components/APIServerEvents",
-      "dashboardCard": "./components/DashboardCard",
-      "overviewDetailItem": "./components/OverviewDetailItem",
-      "customOverviewDetailItem": "./components/CustomOverviewDetailItem",
-      "projectOverviewInventory": "./components/ProjectOverview/Inventory",
-      "projectOverview": "./utils/project-overview",
-      "modalPage": "./components/Modals/ModalPage",
-      "sampleErrorBoundaryPage": "./components/ErrorBoundary/SampleErrorBoundaryPage",
-      "createProjectModal": "./components/Modals/CreateProjectModal"
+      "DashboardPage": "./components/dashboard/DashboardPage",
+      "ApplicationPage": "./components/applications/ApplicationPage",
+      "DataProtectionPage": "./components/dataprotection/DataProtectionPage",
+      "AppvaultPage": "./components/appvaults/AppvaultPage"
     },
-    "disableStaticPlugins": [
-      "@console/netapp-trident-protect"
-    ]
+    "dependencies": {
+      "@console/pluginAPI": "*"
+    }
   }
 }
